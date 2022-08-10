@@ -1,0 +1,6 @@
+Internet
+Unix
+Bash
+JavaScript
+react.js
+SoftSkills
