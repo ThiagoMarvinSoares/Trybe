@@ -1,2 +1,7 @@
+-Oque vou aprender na trybe
+
+SoftSkills
+HTML
 JavaScript
 React.js
+
