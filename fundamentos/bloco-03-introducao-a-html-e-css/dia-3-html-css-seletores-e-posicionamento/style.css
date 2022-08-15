@@ -5,7 +5,7 @@
   
   .goomba {
     width: 100px;
-    position: absolute;
+    
     margin: 300px 0px 0px 50px;
 
   }
@@ -20,6 +20,6 @@
   
   .bowser {
     width: 200px;
-    position: absolute;
+   
     
   }
