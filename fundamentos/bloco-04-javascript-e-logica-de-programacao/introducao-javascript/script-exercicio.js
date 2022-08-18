@@ -1,15 +1,26 @@
 const a =5 , b = 5;
+let conta= "divisao";
 
-let soma = (a + b);
-console.log(soma);
+if (conta == "soma") {
+    console.log(a + b);
+} else if (conta == "subtracao") {
+    console.log(a - b);
+} else if (conta == "multiplicacao") {
+    console.log(a * b);
+} else if (conta == "divisao") {
+    console.log(a / b);
+} else if (conta == "modulo") {
+    console.log(a % b);
+}
 
-let subtracao = (a - b);
-console.log(subtracao);
+// 2. programa  
 
-let multiplicacao = (a * b);
-console.log(multiplicacao);
-let divisao = (a / b);
-console.log(divisao);
+const num1 = 3, num2 = 4;
 
-let modulo = (a % b);
-console.log(modulo);
+if (num1 > num2) {
+    console.log(num1);
+} else if (num1 < num2) {
+    console.log(num2);
+} else {
+    console.log("numeros iguais");
+}

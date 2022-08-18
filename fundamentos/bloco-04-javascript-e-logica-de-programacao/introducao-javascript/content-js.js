@@ -41,7 +41,7 @@
 //     console.log("dia invalido");
 // }
 
-let num1 = 5;
-let num2 = 10;
-let isEven = ((num1 + num2) % 2) == 0
-console.log(isEven);
+// let num1 = 5;
+// let num2 = 10;
+// let isEven = ((num1 + num2) % 2) == 0
+// console.log(isEven);
