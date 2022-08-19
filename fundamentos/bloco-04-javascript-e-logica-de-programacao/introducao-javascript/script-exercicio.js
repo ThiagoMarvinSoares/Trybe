@@ -54,20 +54,35 @@
 
 //5 programa
 
-const x = 50, y = 40, z = 80;
+// const x = 50, y = 40, z = 80;
 
-if (x + y + z == 180) {
-    console.log("true");
-} else if (x < 0) {
-    console.log("numero negativo invalido!");
-} else if (y < 0) {
-    console.log("numero negativo invalido!");
-} else if (z < 0) {
-        console.log("numero negativo invalido!");
-} else {
-    console.log("false");
-}
+// if (x + y + z == 180) {
+//     console.log("true");
+// } else if (x < 0) {
+//     console.log("numero negativo invalido!");
+// } else if (y < 0) {
+//     console.log("numero negativo invalido!");
+// } else if (z < 0) {
+//         console.log("numero negativo invalido!");
+// } else {
+//     console.log("false");
+// }
+
 
 
 //6 programa
 
+let pecaXadrez;
+pecaXadrez = "rAiha".toLowerCase();
+switch (pecaXadrez) {
+    case 'rei':
+        console.log("um para cada lado(menos diagonal).");
+        break;
+
+    case 'rainha'.toLowerCase():
+        console.log("se move para todos os lados o quanto quiser.");
+        break;
+    default :
+        console.log("peca inexistente");
+        break;
+} 
