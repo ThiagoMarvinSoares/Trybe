@@ -54,16 +54,20 @@
 
 //5 programa
 
-const x = 60, y = -2, z = 60;
+const x = 50, y = 40, z = 80;
 
 if (x + y + z == 180) {
     console.log("true");
-} else if (x + y + z != 180) {
+} else if (x < 0) {
+    console.log("numero negativo invalido!");
+} else if (y < 0) {
+    console.log("numero negativo invalido!");
+} else if (z < 0) {
+        console.log("numero negativo invalido!");
+} else {
     console.log("false");
-} 
-else {
-    console.log("invalido");
 }
+
 
 //6 programa
 
