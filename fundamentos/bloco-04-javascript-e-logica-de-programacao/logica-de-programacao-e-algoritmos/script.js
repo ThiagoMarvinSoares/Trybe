@@ -1,13 +1,11 @@
-//fatorial
-// let num = 10;
-// let cnt = 1;
-// for (let index = 1; index < num; index += 1) {
-//     cnt *= index;
-    
+// //fatorial
+// let fat = 1;
+// for (let index = 10; index > 0; index -= 1){
+//     fat *= index;
 // }
-// console.log(cnt);
+// console.log(fat);
 
-//reverse
+// //reverse
 
 // let word = 'Tryber';
 // let sum = "";
@@ -16,3 +14,32 @@
 //     sum += word[index];
 // }
 // console.log(sum);
+
+//3
+
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+// let longest = array[0];
+// let smallest = array[0];
+
+// for (let index = 0; index < array.length; index += 1) {
+//     if (array[index].length > longest.length) {
+//        longest = array[index]
+
+//     }
+// }
+// for (let index = 0; index < array.length; index+=1) {
+//     if (array[index].length < smallest.length) {
+//         smallest = array[index];
+//     }
+    
+// }
+// console.log(longest, smallest);
+
+//4
+
+let num = 0;
+
+for (let index = 1; index <= 50 index += 1) {
+    
+}
