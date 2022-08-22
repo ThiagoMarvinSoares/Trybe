@@ -72,17 +72,18 @@
 
 //6 programa
 
-let pecaXadrez;
-pecaXadrez = "rAiha".toLowerCase();
-switch (pecaXadrez) {
-    case 'rei':
-        console.log("um para cada lado(menos diagonal).");
-        break;
+// let pecaXadrez;
+// pecaXadrez = "rAiha".toLowerCase();
+// switch (pecaXadrez) {
+//     case 'rei':
+//         console.log("um para cada lado(menos diagonal).");
+//         break;
 
-    case 'rainha'.toLowerCase():
-        console.log("se move para todos os lados o quanto quiser.");
-        break;
-    default :
-        console.log("peca inexistente");
-        break;
-} 
+//     case 'rainha'.toLowerCase():
+//         console.log("se move para todos os lados o quanto quiser.");
+//         break;
+//     default :
+//         console.log("peca inexistente");
+//         break;
+// } 
+
