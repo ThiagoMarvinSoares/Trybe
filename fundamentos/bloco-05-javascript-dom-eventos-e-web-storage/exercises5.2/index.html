@@ -57,8 +57,65 @@
   </head>
   <body>
     <script>
-      
-      
+        const fatherBody = document.getElementsByTagName('body')[0];
+        const newChildH1 = document.createElement('h1');
+        newChildH1.className = 'title';
+        const changeText = newChildH1.innerText = "Exercício 5.2 - JavaScript DOM";
+        fatherBody.appendChild(newChildH1);
+
+        const mainElement = document.createElement('main');
+        mainElement.className = 'main-content';
+        document.body.appendChild(mainElement);
+
+        //criando um child de outro elemento ja criado.
+        const sectionElement = document.createElement('section');
+        sectionElement.className = 'center-content';
+        mainElement.appendChild(sectionElement);
+
+        const tagParagraph = document.createElement('p');
+        tagParagraph.innerHTML = 'Thiago Marvin Simoes Soares'
+        sectionElement.appendChild(tagParagraph);
+
+        const sectionElementLeft = document.createElement('section');
+        sectionElementLeft.className = 'left-content';
+        mainElement.appendChild(sectionElementLeft);
+
+        const sectionElementRight = document.createElement('section');
+        sectionElementRight.className = 'right-content';
+        mainElement.appendChild(sectionElementRight);
+
+        const img = document.createElement('img');
+        img.className = 'small-image';
+        img.src = 'https://picsum.photos/200';
+        sectionElementLeft.appendChild(img);
+
+        //IMPORTANTE!!!!!!!!!!!!!!!!!!
+        const elementUl = document.createElement('ul');
+        sectionElementRight.appendChild(elementUl);
+        let arr = ['um','dois','tres', 'quatro', 'cinco', 'seis' , 'sete',' oito', 'nove', 'dez'];
+        for (let index = 0; index < arr.length; index += 1) {
+            const elementLi = document.createElement('li');
+            elementLi.innerHTML = arr[index];
+            elementUl.appendChild(elementLi);
+        }
+
+        
+        for (let index = 1; index <= 3; index+=1) {
+            const h3Elements = document.createElement('h3');
+            h3Elements.innerText = 'Show' + index;
+            mainElement.appendChild(h3Elements)
+        }
+
+
+            
+        
+
+
+
+        
+        
+        
+
     </script>
   </body>
 </html>
