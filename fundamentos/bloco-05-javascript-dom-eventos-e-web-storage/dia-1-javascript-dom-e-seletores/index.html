@@ -57,10 +57,16 @@
 
             let paragraph = document.getElementsByTagName("center-content");
             let changeMainContent = document.getElementsByClassName("main-content");
-            let changeCenterColor = document.getElementsByClassName("center-content")[0];
+            let changeCenter3 = document.getElementsByTagName("p");
+
+            function changeP() {
+              changeCenter3[1].innerText = "asuhduashduashdusah";
+            }
+            changeP();
+
 
             function changeMainContentFunction(){
-                changeColor.style.backgroundColor = "rgb(76,164,109)";
+                changeColor[0].style.backgroundColor = "rgb(76,164,109)";
             }
 
             function changeCenterColorFunction(){
