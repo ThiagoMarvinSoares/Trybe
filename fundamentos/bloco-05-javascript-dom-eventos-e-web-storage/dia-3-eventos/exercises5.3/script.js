@@ -25,24 +25,25 @@ function createDaysOfTheWeek() {
     ulList.appendChild(daysListItem);
 
     if (daysList === 24) {
+      daysListItem.className = 'day holiday';
+    }
+    if (daysList === 25) {
       daysListItem.className = 'day holiday friday';
     }
-    if (dayList === 25) {
-      daysListItem.className = 'day holiday friday';
+    if (daysList === 31) {
+      daysListItem.className = 'day holiday';
     }
-    if (dayList === 31) {
-      daysListItem.className = 'day holiday friday';
-    }
-    if (dayList === 4) {
+    if (daysList === 4) {
       daysListItem.className = 'day friday';
     }
-    if (dayList === 11) {
+    if (daysList === 11) {
       daysListItem.className = 'day friday';
     }
-    if (dayList === 18) {
+    if (daysList === 18) {
       daysListItem.className = 'day friday';
-    }
-    if (dayList === 25) {
-      daysListItem.className = 'day holiday friday';
     }
   }
+  const createButon = document.querySelector('.buttons-container');
+  const newChildBtn = document.createElement('button');
+  newChildBtn.id = 'btn-holiday';
+  createButon.appendChild(newChildBtn);
