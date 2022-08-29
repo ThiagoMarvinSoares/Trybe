@@ -23,4 +23,26 @@ function createDaysOfTheWeek() {
     daysListItem.innerText = daysList;
     daysListItem.className = 'day';
     ulList.appendChild(daysListItem);
+
+    if (daysList === 24) {
+      daysListItem.className = 'day holiday friday';
+    }
+    if (dayList === 25) {
+      daysListItem.className = 'day holiday friday';
+    }
+    if (dayList === 31) {
+      daysListItem.className = 'day holiday friday';
+    }
+    if (dayList === 4) {
+      daysListItem.className = 'day friday';
+    }
+    if (dayList === 11) {
+      daysListItem.className = 'day friday';
+    }
+    if (dayList === 18) {
+      daysListItem.className = 'day friday';
+    }
+    if (dayList === 25) {
+      daysListItem.className = 'day holiday friday';
+    }
   }
