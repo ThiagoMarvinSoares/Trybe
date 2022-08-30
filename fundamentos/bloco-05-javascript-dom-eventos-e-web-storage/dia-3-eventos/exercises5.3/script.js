@@ -43,7 +43,32 @@ function createDaysOfTheWeek() {
       daysListItem.className = 'day friday';
     }
   }
-  const createButon = document.querySelector('.buttons-container');
-  const newChildBtn = document.createElement('button');
-  newChildBtn.id = 'btn-holiday';
-  createButon.appendChild(newChildBtn);
+  
+
+  function createHolidayButtom(buttonName) {
+    const createButon = document.querySelector('.buttons-container');
+    const newChildBtn = document.createElement('button');
+    newChildBtn.id = 'btn-holiday';
+
+    newChildBtn.innerHTML = buttonName;
+    // newChildBtn.id = newChildBtn.id;
+    createButon.appendChild(newChildBtn);
+  }
+  createHolidayButtom('Feriados')
+  
+  function changeBtnColor() {
+    const holidayBtn = document.getElementById('btn-holiday');
+    let getHolidays = document.querySelectorAll('.holiday');
+    let backgroundColor = 'rgb(238,238,238)';
+    let resetColor = 'white';
+    holidayBtn.addEventListener('click', function () {
+      for (let index = 0; index < getHolidays.length; index += 1) {
+        if(getHolidays[index].style.backgroundColor === resetColor){
+          getHolidays[index].style.backgroundColor = backgroundColor;
+        } else {
+          getHolidays[index].style.backgroundColor = 'white';
+        }
+      }
+    })
+  }
+  changeBtnColor();
