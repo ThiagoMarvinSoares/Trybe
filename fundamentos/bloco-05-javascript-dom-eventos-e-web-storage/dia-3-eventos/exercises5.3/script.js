@@ -118,3 +118,10 @@ function createDaysOfTheWeek() {
   zoomDay();
   unzoomDay();
  
+  function newTask(taskName) {
+    const getTasks = document.querySelector('.my-tasks');
+    const newChildSpan = document.createElement('span');
+    newChildSpan.innerHTML = taskName;
+    getTasks.append(taskName);
+  }
+  newTask('cozinhando');
