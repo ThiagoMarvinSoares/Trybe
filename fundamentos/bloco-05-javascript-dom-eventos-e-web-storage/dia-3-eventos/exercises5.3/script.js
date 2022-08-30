@@ -125,3 +125,13 @@ function createDaysOfTheWeek() {
     getTasks.append(taskName);
   }
   newTask('cozinhando');
+
+  function colorToTask(taskColor) {
+    const getTaskDiv = document.querySelector('.my-task');
+    const newChildDiv = document.createElement('div');
+    newChildDiv.className = 'my-tasks';
+    newChildDiv.innerHTML = taskName;
+    getTaskDiv.style.backgroundColor = taskColor;
+    getTaskDiv.appendChild(taskColor);
+  }
+  colorToTask('green');
