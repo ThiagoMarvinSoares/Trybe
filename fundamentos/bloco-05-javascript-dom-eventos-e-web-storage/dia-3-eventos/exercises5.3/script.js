@@ -101,7 +101,6 @@ function createDaysOfTheWeek() {
 
   function zoomDay() {
     const getDay = document.querySelector('#days');
-    console.log(getDay);
     getDay.addEventListener('mouseover', function (event) {
       event.target.style.fontSize = '40px';
     })
@@ -124,14 +123,28 @@ function createDaysOfTheWeek() {
     newChildSpan.innerHTML = taskName;
     getTasks.append(taskName);
   }
-  newTask('cozinhando');
+  newTask('cozinhar');
 
   function colorToTask(taskColor) {
-    const getTaskDiv = document.querySelector('.my-task');
-    const newChildDiv = document.createElement('div');
-    newChildDiv.className = 'my-tasks';
-    newChildDiv.innerHTML = taskName;
-    getTaskDiv.style.backgroundColor = taskColor;
-    getTaskDiv.appendChild(taskColor);
+   const getTaskDiv = document.querySelector('.my-tasks');
+   const createChildDiv = document.createElement('div');
+
+   createChildDiv.className = 'task';
+   createChildDiv.style.backgroundColor = taskColor;
+   getTaskDiv.appendChild(createChildDiv);
   }
   colorToTask('green');
+
+  function selectTask() {
+    const getTaskSelected = document.getElementsByClassName('task selected');
+    const resetTask = document.querySelector('.task');
+
+    resetTask.addEventListener('click', function (event) {
+      if (getTaskSelected.length === 0) {
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    })
+  }
+  selectTask();
