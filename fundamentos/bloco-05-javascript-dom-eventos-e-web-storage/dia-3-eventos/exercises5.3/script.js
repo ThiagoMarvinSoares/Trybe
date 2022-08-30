@@ -59,12 +59,10 @@ function createDaysOfTheWeek() {
   function changeBtnColor() {
     const holidayBtn = document.getElementById('btn-holiday');
     let getHolidays = document.querySelectorAll('.holiday');
-    let backgroundColor = 'rgb(238,238,238)';
-    let resetColor = 'white';
     holidayBtn.addEventListener('click', function () {
       for (let index = 0; index < getHolidays.length; index += 1) {
-        if(getHolidays[index].style.backgroundColor === resetColor){
-          getHolidays[index].style.backgroundColor = backgroundColor;
+        if(getHolidays[index].style.backgroundColor === 'white'){
+          getHolidays[index].style.backgroundColor = 'rgb(238,238,238)';
         } else {
           getHolidays[index].style.backgroundColor = 'white';
         }
@@ -72,3 +70,31 @@ function createDaysOfTheWeek() {
     })
   }
   changeBtnColor();
+
+  function buttonFriday(buttonName) {
+    const btnsContainer = document.querySelector('.buttons-container');
+    const createBtn = document.createElement('button');
+    createBtn.id = 'btn-friday';
+    btnsContainer.appendChild(createBtn);
+    createBtn.innerHTML = buttonName;
+
+  }
+  buttonFriday('Sexta-feira');
+
+  function changeTextFridayBtn(fridays) {
+    const fridayBtn = document.querySelector('#btn-friday');
+    let getFriday = document.getElementsByClassName('friday');
+    let newText = 'Sextaaaaaaaaa';
+
+    fridayBtn.addEventListener('click', function () {
+      for (let index = 0; index < getFriday.length; index += 1) {
+        if(getFriday[index].innerHTML !== newText){
+          getFriday[index].innerHTML = newText;
+        } else {
+          getFriday[index].innerHTML =  fridays[index];
+        }
+      }
+    })
+  }
+  let arrayDays = [4, 11, 18, 25];
+  changeTextFridayBtn(arrayDays);
