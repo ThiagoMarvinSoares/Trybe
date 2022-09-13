@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media (min-width:400px) and (max-width:800px){
+    body{
+        /* background-color: grey; */
+        background-color: #fffdd0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px; 
+    }
+    .container-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+    }
+    #nav-menu {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    #nav-menu li{
+        padding: 0 10px;
+    }
+    .aside-one, .aside-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content p, .aside-one p, .aside-two p, footer p{
+        font-size: 30px;
+    }
+    .content-container {
+        margin: 0 5%;
+    }
+  }
+
+  @media (min-width:801px) and (max-width:1024px) {
+    body{
+        background-color: grey;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px; 
+    }
+    .container-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: white;
+    }
+    #nav-menu {
+        display: flex;
+        list-style: none;
+    }
+    #nav-menu li{
+        padding: 0 10px;
+    }
+    .aside-one, .aside-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content p, .aside-one p, .aside-two p, footer p{
+        font-size: 30px;
+    }
+    .content-container {
+        margin: 0 5%;
+    }
+  }
+
+    @media (min-width: 1025px) {
+        body{
+            background-color: #87cefa;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: white;
+            font-size: 25px;
+            padding: 0 5%;
+        }
+        #nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        #nav-menu li{
+            padding: 0 10px;
+        }
+        .aside-one, .aside-two {
+           
+        }
+        .container-aside {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            font-size: 25px;
+        }
+        .main-content h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        .main-content p, .aside-one p, .aside-two p, footer p{
+            font-size: 30px;
+        }
+        .content-container {
+            margin: 0 5%;
+        }
+        
+        footer h3 {
+            font-size: 40px;
+            text-align: center;
+        }
+    
+    }
