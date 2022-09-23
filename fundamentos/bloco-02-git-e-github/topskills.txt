@@ -1,5 +1,0 @@
-Internet
-Unix
-Bash
-JavaScript
-React.js
